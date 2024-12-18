@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romantičen Album</title>
+</head>
 <body>
     <div class="container">
         <header>
@@ -121,7 +128,8 @@
         .timer-fixed {
             position: fixed; /* Poskrbi, da je na vrhu strani */
             top: 10px; /* Na vrhu */
-            right: 10px; /* Na desni strani */
+            left: 50%; /* Centriraj horizontalno */
+            transform: translateX(-50%); /* Popravi premik zaradi centriranja */
             background: rgba(255, 192, 203, 0.9); /* Roza ozadje */
             color: #000; /* Črna barva za kontrast */
             padding: 15px 20px;
@@ -156,3 +164,5 @@
         calculateTimeTogether();
     </script>
 </body>
+</html>
+
