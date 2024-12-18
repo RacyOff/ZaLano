@@ -47,7 +47,7 @@
         </section>
     </div>
 
-    <!-- Štoparica, ki ostane zgoraj nad vsemi vsebinami -->
+    <!-- Štoparica, ki se nahaja desno spodaj -->
     <div class="timer-fixed">
         <p id="time-together">Nalaganje...</p>
     </div>
@@ -124,12 +124,11 @@
             line-height: 1.6;
         }
 
-        /* Štoparica na vrhu zaslona in vedno vidna */
+        /* Štoparica na desni spodnji del */
         .timer-fixed {
-            position: fixed; /* Poskrbi, da je na vrhu strani */
-            top: 10px; /* Na vrhu */
-            left: 50%; /* Centriraj horizontalno */
-            transform: translateX(-50%); /* Popravi premik zaradi centriranja */
+            position: fixed; /* Poskrbi, da je štoparica vedno vidna */
+            bottom: 10px; /* Na dnu strani */
+            right: 10px; /* Desno ob robu */
             background: rgba(255, 192, 203, 0.9); /* Roza ozadje */
             color: #000; /* Črna barva za kontrast */
             padding: 15px 20px;
@@ -165,4 +164,3 @@
     </script>
 </body>
 </html>
-
