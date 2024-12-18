@@ -38,12 +38,11 @@
             <p><tab><tab> Tvoj možek Oskar</tab></p>
             <p><tab><tab> Za njegovo ženkico Lano</tab></p>
         </section>
+    </div>
 
-        <!-- Premaknjena štoparica -->
-        <div class="timer-fixed">
-            <p id="time-together">Nalaganje...</p>
-        </div>
-
+    <!-- Štoparica, ki ostane zgoraj nad vsemi vsebinami -->
+    <div class="timer-fixed">
+        <p id="time-together">Nalaganje...</p>
     </div>
 
     <audio autoplay loop>
@@ -118,20 +117,21 @@
             line-height: 1.6;
         }
 
+        /* Štoparica na vrhu zaslona in vedno vidna */
         .timer-fixed {
-            position: fixed; /* Fixed na dnu zaslona */
-            bottom: 10px; /* Premaknjeno na dno */
-            right: 10px;
-            background: rgba(255, 192, 203, 0.9); /* Svetlo roza ozadje */
+            position: fixed; /* Poskrbi, da je na vrhu strani */
+            top: 10px; /* Na vrhu */
+            right: 10px; /* Na desni strani */
+            background: rgba(255, 192, 203, 0.9); /* Roza ozadje */
             color: #000; /* Črna barva za kontrast */
             padding: 15px 20px;
             border: 3px solid #ff69b4; /* Temnejši roza okvir */
             border-radius: 15px;
             box-shadow: 0 0 10px rgba(255, 105, 180, 0.8);
             font-family: 'Georgia', serif;
-            font-size: 1em;
+            font-size: 1.2em; /* Večja velikost pisave za boljšo vidnost */
             text-align: center;
-            z-index: 1000;
+            z-index: 10000; /* Zelo visoka vrednost za z-index, da je nad vsemi */
         }
     </style>
 
@@ -156,6 +156,3 @@
         calculateTimeTogether();
     </script>
 </body>
-
-
-
