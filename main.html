@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="sl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Romantičen Album</title>
-</head>
-<body>
-    <div class="timer-fixed">
-    <p id="time-together">Nalaganje...</p>
-</div>
 
+<body>
     <div class="container">
         <header>
             <h1>❤️ Za mojo Lenčiko ❤️</h1>
@@ -35,7 +25,6 @@
             <img src="Screenshot_20241209_145624_com.whatsapp.jpg" alt="Snapchat-1726199813.jpg">
             <img src="IMG_20241005_133716.jpg" alt="Snapchat-1897801372.jpg">
             <img src="Screenshot_20241218_211046.jpg" alt="Prva slika">
-           
         </section>
 
         <section class="quotes">
@@ -50,10 +39,12 @@
             <p><tab><tab> Tvoj možek Oskar</tab></p>
             <p><tab><tab> Za njegovo ženkico Lano</tab></p>
         </section>
-    </div>
 
-    <div class="timer-fixed">
-        <p id="time-together">Nalaganje...</p>
+        <!-- Premaknjen timer tukaj -->
+        <div class="timer-fixed">
+            <p id="time-together">Nalaganje...</p>
+        </div>
+
     </div>
 
     <audio autoplay loop>
@@ -129,26 +120,25 @@
         }
 
         .timer-fixed {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    background: rgba(255, 192, 203, 0.9); 
-    color: #000; 
-    padding: 15px 20px;
-    border: 3px solid #ff69b4; 
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(255, 105, 180, 0.8);
-    font-family: 'Georgia', serif;
-    font-size: 1em;
-    text-align: center;
-    z-index: 1000;
-    transition: transform 0.2s ease;
-}
+            position: absolute; /* Premaknjeno na spodnji del */
+            bottom: 20px; /* Razdalja od spodnjega roba */
+            right: 10px;
+            background: rgba(255, 192, 203, 0.9); /* Svetlo roza ozadje */
+            color: #000; /* Črna barva teksta za dober kontrast */
+            padding: 15px 20px;
+            border: 3px solid #ff69b4; /* Temnejši roza okvir */
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(255, 105, 180, 0.8);
+            font-family: 'Georgia', serif;
+            font-size: 1em;
+            text-align: center;
+            z-index: 1000;
+            transition: transform 0.2s ease;
+        }
 
-.timer-fixed:hover {
-    transform: scale(1.05); 
-}
-
+        .timer-fixed:hover {
+            transform: scale(1.05); /* Povečanje ob premiku miške čez */
+        }
     </style>
 
     <script>
@@ -172,6 +162,5 @@
         calculateTimeTogether();
     </script>
 </body>
-</html>
 
 
