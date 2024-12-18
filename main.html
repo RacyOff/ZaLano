@@ -6,6 +6,10 @@
     <title>Romantičen Album</title>
 </head>
 <body>
+    <div class="timer-fixed">
+    <p id="time-together">Nalaganje...</p>
+</div>
+
     <div class="container">
         <header>
             <h1>❤️ Za mojo Lenčiko ❤️</h1>
@@ -125,19 +129,26 @@
         }
 
         .timer-fixed {
-            position: fixed;
-            top: 10px;
-            right: 10px;
-            background: rgba(255, 107, 129, 0.9);
-            color: #fff;
-            padding: 10px 15px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            font-family: 'Georgia', serif;
-            font-size: 1em;
-            text-align: center;
-            z-index: 1000;
-        }
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 192, 203, 0.9); 
+    color: #000; 
+    padding: 15px 20px;
+    border: 3px solid #ff69b4; 
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.8);
+    font-family: 'Georgia', serif;
+    font-size: 1em;
+    text-align: center;
+    z-index: 1000;
+    transition: transform 0.2s ease;
+}
+
+.timer-fixed:hover {
+    transform: scale(1.05); 
+}
+
     </style>
 
     <script>
