@@ -1,4 +1,3 @@
-
 <body>
     <div class="container">
         <header>
@@ -40,7 +39,7 @@
             <p><tab><tab> Za njegovo ženkico Lano</tab></p>
         </section>
 
-        <!-- Premaknjen timer tukaj -->
+        <!-- Premaknjena štoparica -->
         <div class="timer-fixed">
             <p id="time-together">Nalaganje...</p>
         </div>
@@ -120,11 +119,11 @@
         }
 
         .timer-fixed {
-            position: absolute; /* Premaknjeno na spodnji del */
-            bottom: 20px; /* Razdalja od spodnjega roba */
+            position: fixed; /* Fixed na dnu zaslona */
+            bottom: 10px; /* Premaknjeno na dno */
             right: 10px;
             background: rgba(255, 192, 203, 0.9); /* Svetlo roza ozadje */
-            color: #000; /* Črna barva teksta za dober kontrast */
+            color: #000; /* Črna barva za kontrast */
             padding: 15px 20px;
             border: 3px solid #ff69b4; /* Temnejši roza okvir */
             border-radius: 15px;
@@ -133,11 +132,6 @@
             font-size: 1em;
             text-align: center;
             z-index: 1000;
-            transition: transform 0.2s ease;
-        }
-
-        .timer-fixed:hover {
-            transform: scale(1.05); /* Povečanje ob premiku miške čez */
         }
     </style>
 
@@ -162,5 +156,6 @@
         calculateTimeTogether();
     </script>
 </body>
+
 
 
